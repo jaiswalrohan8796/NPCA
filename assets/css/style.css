@@ -20,6 +20,7 @@ nav {
     margin-right: 2rem;
 }
 .nav-list-item {
+    color: #1B2F3F;
     list-style: none;
     margin: 0 10px;
     align-self: center;
@@ -56,7 +57,7 @@ nav {
 
 .headline {
     text-align: center;
-    margin: 2rem 1rem;
+    margin: 1rem 2rem;
 }
 .headline-head {
     margin-bottom: 1rem;
@@ -67,15 +68,120 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1rem 2rem;
+    margin: 1rem 2.4rem;
     justify-content: center;
 }
 .card {
     width: 340px;
     height: 250px;
-    margin: 1rem;
+    margin: 1.4rem 1.4rem;
+    border: 1px solid rgb(243, 238, 238);
     border-radius: 4px;
-    box-shadow:6px 6px 6px  rgb(238, 235, 235);
+    box-shadow:6px 6px 6px 2px rgb(238, 235, 235);
     text-align: center;
     list-style: none;
+    animation:none;
+    cursor: pointer;
+}
+
+.card:hover {
+    animation: popup 0.2s ease-in  1  forwards;
+}
+.card-pic {
+    width: 108px;
+    height: 108px;
+    margin: 1rem;
+    border-radius: 50%;
+    box-shadow:4px 4px 4px rgb(235, 230, 230);
+}
+.card-title {
+    color: #FFA33E;
+    font-size: 1rem;
+}
+.card-designation {
+    margin: 0.4rem;
+    color: #394044;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.card-loc {
+    font-size: 0.8rem;
+    color: #394044;
+}
+
+
+.footer-nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color:#394044 ;
+    color: #fff;
+    height: 100%;
+}
+.footer-box {
+    display: flex;
+    align-items: center;
+    margin: 0rem 1rem;
+    margin-right: 8rem;
+}
+.footer-name {
+    font-size: 1.2rem;
+}
+.footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+.footer-nav-item {
+    list-style: none;
+    margin: 30px 10px;
+}
+.footer-nav-item a {
+    color: #fff;
+    text-decoration: underline;
+}
+footer {
+    display: flex;
+    height: 62px;
+    background-color: #333332;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #fff;
+}
+footer h5 {
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes popup {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
 }
