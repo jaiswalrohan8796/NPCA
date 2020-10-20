@@ -172,6 +172,9 @@ nav {
     font-weight: 900;
     padding-bottom: 30px;
 }
+.nav-list-item a:hover {
+    border-bottom: 3px solid #FFA33E;
+}
 .active {
     padding:30px 0px;
     border-bottom: 3px solid #FFA33E;
@@ -248,8 +251,9 @@ nav {
 }
 
 /* POP-CARD */
+
 .pop-card-wrapper {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     position: fixed;
@@ -262,7 +266,9 @@ nav {
     border-radius: 20px;
     box-shadow: 2px 2px 6px 2px rgb(224, 217, 217);
     overflow: auto;
+    animation: none;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -291,8 +297,6 @@ nav {
     margin: 1rem;
 }
 #pop-card-cancel {
-    height: 16px;
-    width: 16px;
     position: fixed;
     top: 8px;
     right:12px
@@ -373,12 +377,14 @@ footer h5 {
 
 
 
-
-
-
-
-
-
+@keyframes pop-card {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
 
 
 
