@@ -45,8 +45,8 @@ nav {
   
   cursor: pointer;
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0; 
+  z-index: 2; 
   
   -webkit-touch-callout: none;
 }
@@ -104,7 +104,6 @@ nav {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   border-radius: 12px;
-  /* to stop flickering of text in safari * 26.164.203.136*/
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -135,13 +134,17 @@ nav {
 .mob-social-links {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     position: absolute;
     right: 10px;
-    top: 20px;
-    height: 20px;
+    top: 18px;
+    height: 25px;
     width: 80px;
     background-color: #1B2F3F;
     border-radius: 6px;
+}
+.mob-social-links #mob-social-yt {
+    margin-top: 3px;
 }
 .mob-social-links span {
     margin: 2px;
@@ -278,11 +281,13 @@ nav {
     margin: 1rem 0;
 }
 .pop-card-title {
+    text-align: center;
     color: #FFA33E;
     font-size: 1rem;
     margin-bottom: 0.6rem;
 }
 .pop-card-designation {
+    text-align: center;
     font-size: 0.8rem;
     margin: 0.6rem 0;
 }
@@ -352,7 +357,7 @@ footer h5 {
     font-weight: 500;
 }
 
-
+/* media-queries... */
 
 @media(max-width:730px) {
     nav {
@@ -369,13 +374,7 @@ footer h5 {
     }
 }
 
-
-
-
-
-
-
-
+/* keyframes... */
 
 @keyframes pop-card {
     0% {
@@ -385,12 +384,6 @@ footer h5 {
         opacity: 100%;
     }
 }
-
-
-
-
-
-
 
 @keyframes popup {
     0% {
